@@ -13,7 +13,8 @@ print(id(a), id(b))
 a += 1
 
 print(a, b)
-print(id(a), id(b))```
+print(id(a), id(b))
+```
 
 - **Файл** при компиляции выводит: 
 `10 10
@@ -34,20 +35,24 @@ print(id(first), id(second))
 second.append(30)
 
 print(first, second)
-print(id(first), id(second))```
+print(id(first), id(second))
+```
 
 Дополним программу:
 1. Переназначим second на новый список с теми же элементами.
-```second = [10, 20, 30]```
+```second = [10, 20, 30]
+```
 
 2. Сравним списки с помощью == и is.
 ```print(first == second)
-print(first is second)```
+print(first is second)
+```
 
 3. Изменим новый список и проверим, повлияло ли это на first.
 ```second.append(40)
 print(first)
-print(second)```
+print(second)
+```
 
 4. Построим в REPORT.md две схемы связей между именами и объектами: до и после переназначения.
 До переназначения - оба имени => один список. 
